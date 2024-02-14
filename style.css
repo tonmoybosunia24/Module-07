@@ -48,3 +48,22 @@ nav a{
 .Item{
     border: 1px solid aquamarine;
 }
+
+.Food-Container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.Food{
+    border: 1px solid tomato;
+    padding: 10px;
+    border-radius: 10px;
+}
+.Food > img{
+    width: 100%;
+}
+@media screen and (max-width:576px) { /* (@media screen and (max-width:576px)) এটা ব্যাবহার করা হয় ওয়েবসাইটকে রিসপন্সিভ করার জন্য। কোন স্ক্রীন এর জন্য কেমন স্টাইল হবে তা এটার সাহায্যে করা হয়। */
+    .Food-Container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
