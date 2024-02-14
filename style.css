@@ -1,0 +1,50 @@
+.Flexbox-Container{
+    border: 1px solid salmon;
+    display: flex; /* (display: flex;) */
+    justify-content: space-between; /* (justify-content: ;) (x) অক্ষ বরাবর কাজ করে। justify-content: flex-end;) এটি ব্যাবহার করা হয় কোন ফ্লেক্স এর এলিমেন্ট কে শেষ থেকে শুরু করার জন্য। (justify-content: center;) এটি ব্যাবহার করা হয় কোন ফ্লেক্স এর এলিমেন্ট কে মাঝখানে আনার জন্য। (justify-Content: space-between;)এটি ব্যাবহার করা হয় কোন ফ্লেক্স এর এলিমেন্ট কে ডানে বামে সমান রেখে মাঝখানে বসানোর জন্য। (justify-Content: space-around;) এটি ব্যাবহার করা হয় কোন ফ্লেক্স এর এলিমেন্ট কে চারদিক থেকেই ফাকা রাখার জন্য। (justify-Content: space-evenly;) টি ব্যাবহার করা হয় কোন ফ্লেক্স এর এলিমেন্ট কে চারদিক থেকেই সমান ভাবে ফাকা দেওয়ার জন্য। */
+    height: 400px;
+    align-items: center; /* (align-items: ;) (Y) অক্ষ বরাবর কাজ করে। (align-items: flex-end;) এটি ব্যাবহার করা হয় কোন ফ্লেক্স এর এলিমেন্ট কে শেষে রাখার জন্য। (align-items: center;) এটি ব্যাবহার করা হয় কোন ফ্লেক্স এর এলিমেন্ট কে মাঝখানে রাখার জন্য। */
+    flex-direction: row; /* (flex-direction: ;) ফ্লেক্স ডিরেকশন নরমালি থাকে রো বরাবর। (flex-direction: column;) এটি ব্যাবহার করা হয় ফ্লেক্স এর কোন এলিমেন্ট কে কলাম বরাবর সাজাতে। (flex-direction: column-reverse;) এটি ব্যাবহার করা হয় ফ্লেক্স এর কোন এলিমেন্ট কে উল্টা ভাবে কলাম বরাবর সাজাতে। */
+    flex-wrap: nowrap; /* (flex-wrap: wrap;) এটি ব্যাবহার করা হয় ফ্লেক্স এর কোন এলিমেন্ট এর জায়গা তার পেরেন্ট এর মধ্যে না হলে তাকে পরের লাইনে জোর করে বসাতে। (flex-wrap: nowrap;) এটি ব্যাবহার করা হয় ফ্লেক্স এর কোন এলিমেন্ট এর জায়গা তার পেরেন্ট এর মধ্যে না হলে তাকে জোর করে না বসাতে বসাতে।  */
+}
+.Box{
+    width: 100px;
+    height: 100px;
+    border: 1px dashed tomato;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+
+}
+.Login-Form-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.Login-Form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.Login-Form > input{
+    margin: 10px;
+}
+
+.Grid-Container{
+    display: grid; /* (display: grid;) এটি ব্যাবহার করা হয় কোন এলিমেন্ট কে একসাথে রো আর কলাম দুই ভাবেই সাজানোর জন্য। */
+    grid-template-columns: 200px 200px 200px 200px 200px; /* (grid-template-columns: 200px 200px;) এটি ব্যাবহার করা হয় গ্রিড টি কয়টা কলাম বা রো নিবে তার জন্য আর প্রতিটা কলাম বা রো কতটুকু জায়গা নিবে তার জন্য। */
+    grid-template-columns: repeat(2, 200px) auto; /* (grid-template-columns: repeat(2, 200px) auto;) এটি ব্যাবহার করা হয় গ্রিড টি কয়টা কলাম বা রো নিবে তার জন্য আর প্রতিটা কলাম বা রো কতটুকু জায়গা নিবে তার জন্য। */ 
+    /* grid-template-rows: repeat(3, 200px) 400px; */ /* (grid-template-rows: repeat(3, 200px) 400px;) এটি ব্যাবহার করা হয় গ্রিড টি কয়টা কলাম বা রো নিবে তার জন্য আর প্রতিটা কলাম বা রো কতটুকু জায়গা নিবে তার জন্য। */
+    grid-template-columns: repeat(3, 1fr 2fr 4fr); /* (grid-template-columns: repeat(9, 1fr);) এটি ব্যাবহার করা হয় গ্রিড টি কয়টা কলাম বা রো নিবে তার জন্য আর প্রতিটা কলাম বা রো কতটুকু জায়গা নিবে তার জন্য। (1fr) হলো কতটুকু জায়গা নিবে তার জন্য।  */
+}
+.Item{
+    border: 1px solid aquamarine;
+}
