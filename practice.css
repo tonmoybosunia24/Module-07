@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.Container-Task-One{
+    display: flex;
+    height: 100vh;
+}
+.left{
+    width: 40%;
+    background-color: rgba(17, 104, 75, 0.564);
+}
+.Right{
+    width: 60%;
+    background-color: rgba(210, 105, 30, 0.587);
+}
+@media screen and (max-width: 776px) {
+    .Container-Task-One{
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        height: 40vh;
+    }
+    .Right{
+        width: 100%;
+        height: 60vh;
+    }
+}
+.Responsive-Image{
+    width: 100%;
+}
+.Resposnive-Section-Container{
+    display: flex;
+}
+.Rection-Description > p{
+    padding: 20px 0px;
+}
+.Rection-Description > button{
+    background-color: blue;
+    padding: 10px 15px;
+    color: white;
+}
+@media screen and (max-width: 776px) {
+    .Resposnive-Section-Container{
+        flex-direction: row;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .Section-Image > img{
+        width: 100%;
+    }
+}
+.Task-Five{
+    display: flex;
+}
+.Task-Five-img > img{
+    width: 100%;
+}
+@media screen and (max-Width: 776px) {
+    .Task-Five{
+        flex-direction: column-reverse;
+    }
+    .first{
+        display: flex;
+        flex-direction: column;
+    }
+}
